@@ -1,3 +1,2 @@
-awscli
-NanoPlot
+pod5
 duplex-tools
