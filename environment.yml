@@ -3,6 +3,8 @@ channels:
   - conda-forge
   - bioconda
 dependencies:
-  - samtools
+  - awscli
   - bcftools
   - htslib
+  - nanoplot  
+  - samtools
