@@ -1,3 +1,9 @@
 #!/bin/bash
 
-echo "hello"
+cd $HOME
+mkdir test-data
+cd test-data
+
+aws s3 cp --no-sign-request s3://ont-open-data/gm24385_2023.12/all_pass.vhg002v1.bam  - | \
+samtools view | head -n 100 > first-hundred-reads_pass.vhg002v1.bam
+
